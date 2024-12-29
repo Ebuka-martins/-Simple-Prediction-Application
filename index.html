@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern Predictor</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Pattern Predictor</h1>
+      <div class="input-section">
+        <div class="data-input">
+          <h2>Enter Historical Data</h2>
+          <div class="input-group">
+            <input type="number" id="dataPoint" placeholder="Enter a number">
+            <button id="addData">Add Data Point</button>
+          </div>
+        </div>
+        <div class="prediction-input">
+          <h2>Make Prediction</h2>
+          <button id="predict">Predict Next Value</button>
+        </div>
+      </div>
+      <div class="display-section">
+        <div class="historical-data">
+          <h3>Historical Data</h3>
+          <div id="dataDisplay"></div>
+        </div>
+        <div class="prediction-result">
+          <h3>Prediction</h3>
+          <div id="predictionDisplay"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
