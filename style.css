@@ -73,11 +73,22 @@ button {
   font-size: 1rem;
   font-weight: bold;
   transition: transform 0.2s ease, background-color 0.3s;
+  /* Mobile optimizations */
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  outline: none;
 }
 
 button:hover {
   background: var(--accent-color);
   transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+  background: var(--accent-color);
 }
 
 .historical-data, .prediction-result {
@@ -108,5 +119,20 @@ button:hover {
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.7rem 1.2rem;
+    min-height: 44px;
+    width: auto;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  input {
+    min-height: 44px;
   }
 }
